@@ -210,8 +210,14 @@ input {
   left: -200px;               /* Mexe no butao canto superior esquerdo "Tripplaner" */
 
 }
+.nav__logo2, .nav__toggle {
+  color: var(--white-color);
+  position: relative;
+  left: 250px;               /* Mexe no butao canto superior esquerdo "Tripplaner" */
 
-.nav__logo {
+}
+
+.nav__logo,.nav__logo2 {
   font-weight: var(--font-semi-bold);
 }
 
@@ -247,21 +253,13 @@ input {
   color: var(--text-color-light);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
-  
+  position: relative;
+  left: 130px;
 }
 
 .nav__link:hover {
   color: var(--text-color);
   
-}.nav__link2 {
-  color: var(--text-color-light);
-  font-weight: var(--font-semi-bold);
-  text-transform: uppercase;
-  
-}
-
-.nav__link:hover2 {
-  color: var(--text-color);
 }
 
 .nav__close {
@@ -284,7 +282,7 @@ input {
   box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
 }
 
-.scroll-header .nav__logo,
+.scroll-header .nav__logo, .scroll-header .nav__logo2
  .scroll-header .nav__toggle {
   color: var(--title-color);
 }
@@ -868,17 +866,12 @@ input {
   .nav__link {
     color: var(--white-color);
     text-transform: initial;
+
   }
   .nav__link:hover {
     color: var(--white-color);
   }
-  .nav__link2 {
-    color: var(--white-color);
-    text-transform: initial;
-  }
-  .nav__link2:hover {
-    color: var(--white-color);
-  }
+
   .nav__dark {
     position: initial;
   }
@@ -902,7 +895,10 @@ input {
   .active-link::before {
     background-color: var(--white-color);
   }
-  .scroll-header .nav__link .nav__link2  {
+  .scroll-header .nav__link  {
+    color: var(--text-color);
+  }
+  .scroll-header .nav__logo2  {
     color: var(--text-color);
   }
   .scroll-header .active-link {
