@@ -206,6 +206,9 @@ input {
 
 .nav__logo, .nav__toggle {
   color: var(--white-color);
+  position: relative;
+  left: -200px;               /* Mexe no butao canto superior esquerdo "Tripplaner" */
+
 }
 
 .nav__logo {
@@ -220,7 +223,6 @@ input {
 .nav__menu {
   position: relative;
 }
-
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -245,9 +247,20 @@ input {
   color: var(--text-color-light);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
+  
 }
 
 .nav__link:hover {
+  color: var(--text-color);
+  
+}.nav__link2 {
+  color: var(--text-color-light);
+  font-weight: var(--font-semi-bold);
+  text-transform: uppercase;
+  
+}
+
+.nav__link:hover2 {
   color: var(--text-color);
 }
 
@@ -272,7 +285,7 @@ input {
 }
 
 .scroll-header .nav__logo,
-.scroll-header .nav__toggle {
+ .scroll-header .nav__toggle {
   color: var(--title-color);
 }
 
@@ -859,6 +872,13 @@ input {
   .nav__link:hover {
     color: var(--white-color);
   }
+  .nav__link2 {
+    color: var(--white-color);
+    text-transform: initial;
+  }
+  .nav__link2:hover {
+    color: var(--white-color);
+  }
   .nav__dark {
     position: initial;
   }
@@ -866,9 +886,9 @@ input {
     display: flex;
     column-gap: 1rem;
   }
-  .nav__list {
+  .nav__list {          
     flex-direction: row;
-    column-gap: 4rem;
+    column-gap: 4.5rem;      /*Afasta a navbar*/
   }
   .nav__toggle, .nav__close {
     display: none;
@@ -882,7 +902,7 @@ input {
   .active-link::before {
     background-color: var(--white-color);
   }
-  .scroll-header .nav__link {
+  .scroll-header .nav__link .nav__link2  {
     color: var(--text-color);
   }
   .scroll-header .active-link {
