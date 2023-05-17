@@ -32,27 +32,28 @@
                     <a href="#" class="nav__logo">TriPlanner</a>
 
                     <li class="nav__item">
-                        <p style = "color:#ffffff00">Voo/Hotel</p>
+                        <a href="#voo/hotel" class="nav__link active-link">Voo/Hotel</a><!--     -->
                     </li>
                     <li class="nav__item">
-                        <p style = "color:#ffffff00">Recomendações Para Ti</p>
+                        <a href="#recomendacoes" class="nav__link">Recomendações Para Ti</a>
                     </li>
                     <li class="nav__item">
-                        <p style = "color:#ffffff00">Top5Destinos (Populares)</p>
+                        <a href="#top5destinos" class="nav__link">Top5Destinos (Populares)</a><!--     -->
                     </li>
-                    
+
                     <li class="nav__item">
                         <a href="#perfil.html" class="nav__logo2">Perfil</a>
                     </li>
                     <li class="nav__item">
                         <a href="#signup.html" class="nav__logo2">Logout</a>
                     </li>
+
                 </ul>
 
                 <div class="nav__dark">
                     <!-- Theme change button -->
                     <span class="change-theme-name">Dark mode</span>
-                    <i class="ri-moon-line" id="theme-button"></i>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
                 </div>
 
                 <i class="ri-close-line nav__close" id="nav-close"></i>
@@ -66,14 +67,23 @@
 
     <main class="main">
 
-        <!--====================  ====================-->
+        <!--==================== VIDEO ====================-->
         <section class="video section">
             <h2 class="section__title">A sua reserva</h2>
 
             <div class="video__container container">
-                <p class="video__description">Colocar tabela com informações de viagem aqui
+                <p class="video__description">Colocar dados aqui
                 </p>
 
+                <div class="video__content">
+                    <video id="video-file">
+                        <source src="assets/video/video.mp4" type="video/mp4">
+                    </video>
+
+                    <button class="button button--flex video__button" id="video-button">
+                        <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                    </button>
+                </div>
             </div>
         </section>
 

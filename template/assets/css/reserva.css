@@ -98,7 +98,6 @@ body.dark-theme {
 .change-theme {
   cursor: pointer;
   font-size: 1rem;
-
 }
 
 .change-theme-name {
@@ -194,8 +193,7 @@ input {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
-  box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+  background-color: #0e373f;
 }
 
 /*=============== NAV ===============*/
@@ -207,15 +205,15 @@ input {
 }
 
 .nav__logo, .nav__toggle {
-  color: var(--black-color);
+  color: var(--white-color);
   position: relative;
   left: -200px;               /* Mexe no butao canto superior esquerdo "Tripplaner" */
 
 }
 .nav__logo2, .nav__toggle {
-  color: var(--black-color);
+  color: var(--white-color);
   position: relative;
-  left: 250px;               /* Mexe no botao canto superior direito "Tripplaner" */
+  left: 250px;               /* Mexe no butao canto superior esquerdo "Tripplaner" */
 
 }
 
@@ -239,7 +237,7 @@ input {
     right: -100%;
     width: 70%;
     height: 100%;
-    box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+    box-shadow: -1px 0 4px rgba(14, 55, 63, 0.149);
     padding: 3rem;
     transition: .4s;
   }
@@ -284,6 +282,10 @@ input {
   box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
 }
 
+.scroll-header .nav__logo, .scroll-header .nav__logo2
+ .scroll-header .nav__toggle {
+  color: var(--title-color);
+}
 
 /* Active link */
 .active-link {
@@ -300,7 +302,6 @@ input {
   bottom: -.75rem;
   left: 0;
 }
-
 
 /*=============== HOME ===============*/
 .home__img {
