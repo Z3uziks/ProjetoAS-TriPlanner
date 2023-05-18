@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="ChatBot/static/css/chat.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+
     <title>TriPlanner</title>
 </head>
 
@@ -107,30 +109,79 @@
         </section>
 
         <!--==================== voo/hotel ====================-->
-        <section class="about section" id="voo/hotel">
-            <div class="about__container container grid">
-                <div class="about__data">
-                    <h2 class="section__title about__title">More Information <br> About The Best Beaches</h2>
-                    <p class="about__description">You can find the most beautiful and pleasant places at the best
-                        prices with special discounts, you choose the place we will guide you all the way to wait, get
-                        your
-                        place now.
-                    </p>
-                    <a href="#" class="button">Reserve a place</a>
+        <section class="voohotel" id="voo/hotel">
+            <h2 class="section__title"></h2>
+            <p class="video__description">Aqui podes escolher se queres marcar apenas Voos, apenas Hotel ou ambos!</p>
+            <div id="headervoohotel">
+                <nav>
+                    <li><a href="#" onclick="showSection('voo')">Voo</a></li>
+                    <li><a href="#" onclick="showSection('hotel')">Hotel</a></li>
+                    <li><a href="#" onclick="showSection('voohotel')">Voo + Hotel</a></li>
+                </nav>
+
+                <div id="content2">
+                    <section id="section-voo" class="hidden">
+                        <h2>Voo</h2>
+                        <form>
+                            <label for="origem">Origem:</label>
+                            <input type="text" id="origem" name="origem"><br>
+
+                            <label for="destino">Destino:</label>
+                            <input type="text" id="destino" name="destino"><br>
+
+                            <label for="origem">Partida:</label>
+                            <input type="text" id="partida" name="partida"><br>
+
+                            <label for="origem">Chegada:</label>
+                            <input type="text" id="chegada" name="chegada"><br>
+
+                            <label for="origem">Quantidade de Pessoas:</label>
+                            <input type="text" id="quantidadepessoas" name="quantidadepessoas"><br>
+
+                            <label for="origem">Ida e Volta:</label>
+                            <input type="text" id="idavolta" name="idavolta"><br>
+
+                            <label for="origem">Qualquer:</label>
+                            <input type="text" id="qualquer" name="qualquer"><br>
+                            <!-- Restante dos campos do formulário para voo -->
+
+                            <input type="submit" value="Confirmar">
+                        </form>
+                    </section>
+
+                    <section id="section-hotel" class="hidden">
+                        <h2>Hotel</h2>
+                        <form>
+                            <label for="localizacao">Localização:</label>
+                            <input type="text" id="localizacao" name="localizacao"><br>
+
+                            <label for="checkin">Check-in:</label>
+                            <input type="text" id="checkin" name="checkin"><br>
+
+                            <!-- Restante dos campos do formulário para hotel -->
+
+                            <input type="submit" value="Confirmar">
+                        </form>
+                    </section>
+
+                    <section id="section-voohotel" class="hidden">
+                        <h2>Voo + Hotel</h2>
+                        <form>
+                            <label for="origem2">Origem:</label>
+                            <input type="text" id="origem2" name="origem2"><br>
+
+                            <label for="destino2">Destino:</label>
+                            <input type="text" id="destino2" name="destino2"><br>
+
+                            <!-- Restante dos campos do formulário para voo + hotel -->
+                            <input type="submit" value="Confirmar">
+                        </form>
+                    </section>
                 </div>
 
-                <div class="about__img">
-                    <div class="about__img-overlay">
-                        <img src="assets/img/aboutw1.jpg" alt="" class="about__img-one">
-                    </div>
 
-                    <div class="about__img-overlay">
-                        <img src="assets/img/about2.jpg" alt="" class="about__img-two">
-                    </div>
-                </div>
             </div>
         </section>
-
 
         <!--==================== Recomendações Para Ti ====================-->
         <section class="place section" id="recomendacoes">

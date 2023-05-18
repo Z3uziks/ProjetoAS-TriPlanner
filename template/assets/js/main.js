@@ -183,3 +183,16 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== voo/hotel menu ====================*/
+function showSection(sectionId) {
+  // Oculta todas as seções
+  var sections = document.querySelectorAll('section[id^="section-"]');
+  for (var i = 0; i < sections.length; i++) {
+    sections[i].style.display = 'none';
+  }
+
+  // Exibe a seção selecionada
+  var section = document.getElementById('section-' + sectionId);
+  section.style.display = 'block';
+}
