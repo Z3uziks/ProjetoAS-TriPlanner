@@ -1058,3 +1058,12 @@ input {
     height: 640px;
   }
 }
+
+.rectangle
+{
+  width: 300px;
+  height: 150px;
+  background: rgb(18, 133, 154);
+  margin-left: 25%;
+  position: center;
+}
