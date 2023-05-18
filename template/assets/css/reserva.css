@@ -1058,3 +1058,36 @@ input {
     height: 640px;
   }
 }
+
+.rectangle
+{
+  width: 814.4px;
+  height: 262px;
+  background: rgb(27, 150, 172);
+}
+
+.reserva_header
+{
+  margin-top: -20px;
+  position: relative;  
+  color: #FFF;
+}
+
+.voo_header
+{
+  right: -50px;
+  color: #FFF;
+  top: 20px;
+  font-size: large;
+  position: relative;
+
+}
+
+.thin_rectangle
+{
+  width: 700px;
+  height: 20px;
+  background: rgb(33, 211, 243);
+  margin-top: 50px;
+  position: relative;  
+}
