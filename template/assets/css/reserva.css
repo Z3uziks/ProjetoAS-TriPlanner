@@ -1061,7 +1061,7 @@ input {
 
 .rectangle
 {
-  width: 814.4px;
+  width: 1024px;
   height: 262px;
   background: rgb(27, 150, 172);
 }
@@ -1083,11 +1083,47 @@ input {
 
 }
 
-.thin_rectangle
+.thin_rectangle1
 {
-  width: 700px;
-  height: 20px;
+  width: 910px;
+  height: 35px;
   background: rgb(33, 211, 243);
   margin-top: 50px;
+  right: -50px;
+  top: -20px;
   position: relative;  
+}
+
+.thin_rectangle2
+{
+  width: 910px;
+  height: 35px;
+  background: #14505c;
+  margin-top: 50px;
+  right: -50px;
+  top: -55px;
+  position: relative;  
+}
+
+.word-spacing
+{
+  display: inline;
+  color:#FFF;
+  margin-left: 100px;
+}
+
+.word-spacing .word1 {
+  margin-right: 120px;
+}
+
+.word-spacing .word2 {
+  margin-right: 120px;
+}
+
+.word-spacing .word3 {
+  margin-right: 120px;
+}
+
+.word-spacing .word4 {
+  margin-right: 100px;
 }
