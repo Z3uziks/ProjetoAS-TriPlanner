@@ -1082,3 +1082,12 @@ input {
   position: relative;
 
 }
+
+.thin_rectangle
+{
+  width: 700px;
+  height: 20px;
+  background: rgb(33, 211, 243);
+  margin-top: 50px;
+  position: relative;  
+}
