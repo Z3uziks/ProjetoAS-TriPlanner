@@ -1061,9 +1061,24 @@ input {
 
 .rectangle
 {
-  width: 300px;
-  height: 150px;
-  background: rgb(18, 133, 154);
-  margin-left: 25%;
-  position: center;
+  width: 814.4px;
+  height: 262px;
+  background: rgb(27, 150, 172);
+}
+
+.reserva_header
+{
+  margin-top: -20px;
+  position: relative;  
+  color: #FFF;
+}
+
+.voo_header
+{
+  right: -50px;
+  color: #FFF;
+  top: 20px;
+  font-size: large;
+  position: relative;
+
 }
