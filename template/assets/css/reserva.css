@@ -1062,7 +1062,7 @@ input {
 .rectangle
 {
   width: 1024px;
-  height: 262px;
+  height: 400px;
   background: rgb(27, 150, 172);
 }
 
@@ -1112,18 +1112,106 @@ input {
   margin-left: 100px;
 }
 
-.word-spacing .word1 {
+.word-spacing .word1 
+{
   margin-right: 120px;
 }
 
-.word-spacing .word2 {
+.word-spacing .word2
+{
   margin-right: 120px;
 }
 
-.word-spacing .word3 {
+.word-spacing .word3 
+{
   margin-right: 120px;
 }
 
-.word-spacing .word4 {
+.word-spacing .word4 
+{
   margin-right: 100px;
+}
+
+.sub_description
+{
+  margin-left: 200px;
+  color:#FFF;
+  padding-top: 5px;
+  position: relative;
+}
+
+.ida_header
+{
+  right: -50px;
+  color: #FFF;
+  top: -40px;
+  font-size: large;
+  position: relative;
+
+}
+
+.word-spacing2
+{
+  
+  color:#FFF;
+  margin-left: 120px;
+  
+  margin-top: -40px;
+}
+
+.word-spacing2 .word1 
+{
+  margin-right: 100px;
+  display: inline-block;
+}
+
+.word-spacing2 .word2
+{
+  margin-right: 130px;
+  display: inline-block;
+}
+
+.word-spacing2 .word3 
+{
+  margin-right: 180px;
+  display: inline-block;
+}
+
+.word-spacing2 .word4 
+{
+  margin-right: 100px;
+  display: inline-block;
+}
+
+.word-spacing3
+{
+  
+  color:#FFF;
+  margin-left: 120px;
+  
+  margin-top: 20px;
+}
+
+.word-spacing3 .word1 
+{
+  margin-right: 100px;
+  display: inline-block;
+}
+
+.word-spacing3 .word2
+{
+  margin-right: 130px;
+  display: inline-block;
+}
+
+.word-spacing3 .word3 
+{
+  margin-right: 180px;
+  display: inline-block;
+}
+
+.word-spacing3 .word4 
+{
+  margin-right: 100px;
+  display: inline-block;
 }
