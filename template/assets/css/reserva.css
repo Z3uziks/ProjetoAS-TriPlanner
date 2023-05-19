@@ -1351,3 +1351,30 @@ input {
 {
   margin-right: 100px;
 }
+
+.word-spacing7
+{
+  display: inline;
+  color:#FFF;
+  margin-left: 130px;
+}
+
+.word-spacing7 .word1 
+{
+  margin-right: 120px;
+}
+
+.word-spacing7 .word2
+{
+  margin-right: 120px;
+}
+
+.word-spacing7 .word3 
+{
+  margin-right: 120px;
+}
+
+.word-spacing7 .word4 
+{
+  margin-right: 100px;
+}
