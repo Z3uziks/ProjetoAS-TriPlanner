@@ -1307,7 +1307,47 @@ input {
 {
   width: 800px;
   margin-left: 100px;
-  border-width: 2px;
+  
   background-color: #14505c;
+  color: aqua;
+  height: 5px;
 
+}
+
+.thin_rectangle4
+{
+  width: 910px;
+  height: 35px;
+  background: rgb(33, 211, 243);
+  margin-top: 50px;
+  right: -50px;
+  top: -20px;
+  position: relative;  
+}
+
+.word-spacing6
+{
+  display: inline;
+  color:#FFF;
+  margin-left: 80px;
+}
+
+.word-spacing6 .word1 
+{
+  margin-right: 120px;
+}
+
+.word-spacing6 .word2
+{
+  margin-right: 120px;
+}
+
+.word-spacing6 .word3 
+{
+  margin-right: 120px;
+}
+
+.word-spacing6 .word4 
+{
+  margin-right: 100px;
 }
