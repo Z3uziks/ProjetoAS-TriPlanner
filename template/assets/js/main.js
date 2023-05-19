@@ -253,6 +253,10 @@ document.getElementById("checkout").addEventListener("click", function () {
 });
 
 
+
+
+
+
 // Evento de clique fora do calendário para ocultá-lo
 document.addEventListener("click", function (event) {
   var dropdowns = document.getElementsByClassName("dropdown-calendar");
@@ -260,10 +264,14 @@ document.addEventListener("click", function (event) {
   var chegadaInput = document.getElementById("chegada");
   var checkinInput = document.getElementById("checkin");
   var checkoutInput = document.getElementById("checkout");
+  var voohotelpartida = document.getElementById("voohotelpartida");
+  var voohotelchegada = document.getElementById("voohotelchegada");
+  var voohotelcheckin = document.getElementById("voohotelcheckin");
+  var voohotelcheckout = document.getElementById("voohotelcheckout");
 
   for (var i = 0; i < dropdowns.length; i++) {
     var dropdown = dropdowns[i];
-    if (!dropdown.contains(event.target) && event.target !== partidaInput && event.target !== chegadaInput && event.target !== checkinInput && event.target !== checkoutInput) {
+    if (!dropdown.contains(event.target) && event.target !== partidaInput && event.target !== chegadaInput && event.target !== checkinInput && event.target !== checkoutInput && event.target !== voohotelpartida && event.target !== voohotelchegada && event.target !== voohotelcheckin && event.target !== voohotelcheckout) {
       dropdown.style.display = "none";
     }
   }
@@ -331,4 +339,8 @@ generateCalendar("partida-calendar", "partida");
 generateCalendar("chegada-calendar", "chegada");
 generateCalendar("checkin-calendar", "checkin");
 generateCalendar("checkout-calendar", "checkout");
+generateCalendar("voohotel-partida-calendar", "voohotelpartida");
+generateCalendar("voohotel-chegada-calendar", "voohotelchegada");
+generateCalendar("voohotel-checkin-calendar", "voohotelcheckin");
+generateCalendar("voohotel-checkout-calendar", "voohotelcheckout");
 

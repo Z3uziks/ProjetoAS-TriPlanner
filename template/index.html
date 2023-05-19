@@ -115,6 +115,8 @@
                 </nav>
 
                 <div id="content2">
+
+                    <!-- --------------------------------------- VOO --------------------------------------- -->
                     <section id="section-voo" class="hidden">
                         <h2>Voo</h2>
                         <form>
@@ -154,7 +156,7 @@
                             <input type="submit" value="Confirmar">
                         </form>
                     </section>
-
+                    <!-- --------------------------------------- HOTEL --------------------------------------- -->
                     <section id="section-hotel" class="hidden">
                         <h2>Hotel</h2>
                         <form>
@@ -195,6 +197,7 @@
                         </form>
                     </section>
 
+                    <!-- --------------------------------------- VOO + HOTEL --------------------------------------- -->
                     <section id="section-voohotel" class="hidden">
                         <h2>Voo + Hotel</h2>
                         <label for="origem">Origem (Voo):</label>
@@ -203,15 +206,16 @@
                         <label for="origem">Destino (Voo):</label>
                         <input type="text" id="destino" name="destino" placeholder="Amsterdão"><br>
 
-                        <label for="partida">Partida (Voo):</label>
+                        <label for="voohotelpartida">Partida (Voo):</label>
                         <div class="dropdown">
-                            <input type="text" id="partida" name="partida" placeholder="dd/mm/aaaa" readonly>
-                            <div class="dropdown-calendar" id="partida-calendar"></div>
+                            <input type="text" id="voohotelpartida" name="voohotelpartida" placeholder="dd/mm/aaaa"
+                                readonly>
+                            <div class="dropdown-calendar" id="voohotel-partida-calendar"></div>
                         </div>
 
                         <label for="destino">Chegada (Voo):</label>
                         <div class="dropdown">
-                            <input type="text" id="chegada" name="chegada" placeholder="dd/mm/aaaa" readonly>
+                            <input type="text" id="voohotelchegada" name="chegada" placeholder="dd/mm/aaaa" readonly>
                             <div class="dropdown-calendar" id="chegada-calendar"></div>
                         </div>
 
@@ -257,8 +261,8 @@
                             <label for="voohotel-star2" title="2 estrelas">&#9733;</label>
                             <input type="radio" id="voohotel-star1" name="voohotel-categoria" value="1">
                             <label for="voohotel-star1" title="1 estrela">&#9733;</label>
-                          </div>
-                        
+                        </div>
+
                         </form>
                     </section>
                 </div>
