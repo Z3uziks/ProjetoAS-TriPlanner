@@ -149,3 +149,163 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+//----------------------------------------------------------
+
+
+
+
+
+
+
+// Função para exibir/ocultar o calendário
+function toggleCalendar(inputId) {
+  var input = document.getElementById(inputId);
+  var dropdown = input.nextElementSibling;
+
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+
+// Função para definir a data selecionada no campo de partida/chegada
+function selectDate(inputId, day, month, year) {
+  var input = document.getElementById(inputId);
+  var formattedDate = `${day}/${month}/${year}`;
+  input.value = formattedDate;
+
+  // Oculta o calendário após a seleção da data
+  toggleCalendar(inputId);
+}
+
+// Evento de clique no campo de partida para exibir/ocultar o calendário
+document.getElementById("partida").addEventListener("click", function () {
+  toggleCalendar("partida");
+});
+
+// Evento de clique no campo de chegada para exibir/ocultar o calendário
+document.getElementById("chegada").addEventListener("click", function () {
+  toggleCalendar("chegada");
+});
+
+document.getElementById("checkin").addEventListener("click", function () {
+  toggleCalendar("checkin");
+});
+
+// Evento de clique no campo de chegada para exibir/ocultar o calendário
+document.getElementById("checkout").addEventListener("click", function () {
+  toggleCalendar("checkout");
+});
+
+document.getElementById("voohotelpartida").addEventListener("click", function () {
+  toggleCalendar("voohotelpartida");
+});
+
+// Evento de clique no campo de chegada para exibir/ocultar o calendário
+document.getElementById("voohotelchegada").addEventListener("click", function () {
+  toggleCalendar("voohotelchegada");
+});
+
+document.getElementById("voohotelcheckin").addEventListener("click", function () {
+  toggleCalendar("voohotelcheckin");
+});
+
+// Evento de clique no campo de chegada para exibir/ocultar o calendário
+document.getElementById("voohotelcheckout").addEventListener("click", function () {
+  toggleCalendar("voohotelcheckout");
+});
+
+
+
+
+
+
+// Evento de clique fora do calendário para ocultá-lo
+document.addEventListener("click", function (event) {
+  var dropdowns = document.getElementsByClassName("dropdown-calendar");
+  var partidaInput = document.getElementById("partida");
+  var chegadaInput = document.getElementById("chegada");
+  var checkinInput = document.getElementById("checkin");
+  var checkoutInput = document.getElementById("checkout");
+  var voohotelpartidaInput = document.getElementById("voohotelpartida");
+  var voohotelchegadaInput = document.getElementById("voohotelchegada");
+  var voohotelcheckinInput = document.getElementById("voohotelcheckin");
+  var voohotelcheckoutInput = document.getElementById("voohotelcheckout");
+
+  for (var i = 0; i < dropdowns.length; i++) {
+    var dropdown = dropdowns[i];
+    if (!dropdown.contains(event.target) && event.target !== partidaInput && event.target !== chegadaInput && event.target !== checkinInput && event.target !== checkoutInput && event.target !== voohotelpartidaInput && event.target !== voohotelchegadaInput && event.target !== voohotelcheckinInput && event.target !== voohotelcheckoutInput) {
+      dropdown.style.display = "none";
+    }
+  }
+});
+
+// Gera o calendário
+function generateCalendar(calendarId, inputId) {
+  var calendar = document.getElementById(calendarId);
+  var currentDate = new Date();
+  var currentMonth = currentDate.getMonth();
+  var currentYear = currentDate.getFullYear();
+
+  var months = [
+    "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+    "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+  ];
+
+  // Cabeçalho do calendário (mês e ano)
+  var header = document.createElement("div");
+  header.className = "calendar-header";
+  header.innerHTML = `
+    <button class="prev-btn" onclick="prevMonth('${calendarId}')">&lt;</button>
+    <span class="month">${months[currentMonth]}</span>
+    <span class="year">${currentYear}</span>
+    <button class="next-btn" onclick="nextMonth('${calendarId}')">&gt;</button>
+  `;
+  calendar.appendChild(header);
+
+  // Dias da semana
+  var weekdays = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"];
+  var weekdaysRow = document.createElement("div");
+  weekdaysRow.className = "weekdays";
+  weekdays.forEach(function (weekday) {
+    var weekdayCell = document.createElement("div");
+    weekdayCell.textContent = weekday;
+    weekdaysRow.appendChild(weekdayCell);
+  });
+  calendar.appendChild(weekdaysRow);
+
+  // Dias do mês
+  var daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+  var firstDayOfWeek = new Date(currentYear, currentMonth, 1).getDay();
+  var daysRow = document.createElement("div");
+  daysRow.className = "days";
+
+  // Células vazias para o início do mês
+  for (var i = 0; i < firstDayOfWeek; i++) {
+    var emptyCell = document.createElement("div");
+    daysRow.appendChild(emptyCell);
+  }
+
+  // Células com os dias do mês
+  for (var day = 1; day <= daysInMonth; day++) {
+    var dayCell = document.createElement("div");
+    dayCell.textContent = day;
+    dayCell.addEventListener("click", selectDate.bind(null, inputId, day, currentMonth + 1, currentYear));
+    daysRow.appendChild(dayCell);
+  }
+
+  calendar.appendChild(daysRow);
+}
+
+// Inicializa os calendários
+generateCalendar("partida-calendar", "partida");
+generateCalendar("chegada-calendar", "chegada");
+generateCalendar("checkin-calendar", "checkin");
+generateCalendar("checkout-calendar", "checkout");
+generateCalendar("voohotelpartida-calendar", "voohotelpartida");
+generateCalendar("voohotelchegada-calendar", "voohotelchegada");
+generateCalendar("voohotelcheckin-calendar", "voohotelcheckin");
+generateCalendar("voohotelcheckout-calendar", "voohotelcheckout");
+
