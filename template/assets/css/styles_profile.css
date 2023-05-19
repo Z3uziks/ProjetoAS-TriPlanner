@@ -213,7 +213,7 @@ input {
 .nav__logo2, .nav__toggle {
   color: var(--white-color);
   position: relative;
-  left: 250px;               /* Mexe no butao canto superior esquerdo "Tripplaner" */
+  left: 920px;               /* Mexe no butao canto superior esquerdo "Tripplaner" */
 
 }
 
