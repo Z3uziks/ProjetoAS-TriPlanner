@@ -1062,7 +1062,7 @@ input {
 .rectangle
 {
   width: 1024px;
-  height: 400px;
+  height: 800px;
   background: rgb(27, 150, 172);
 }
 
@@ -1214,4 +1214,100 @@ input {
 {
   margin-right: 100px;
   display: inline-block;
+}
+
+.thin_rectangle3
+{
+  width: 910px;
+  height: 35px;
+  background: #14505c;
+  margin-top: 50px;
+  right: -50px;
+  top: -30px;
+  position: relative;  
+}
+
+.volta_header
+{
+  right: -50px;
+  color: #FFF;
+  top: -20px;
+  font-size: large;
+  position: relative;
+
+}
+
+.word-spacing4
+{
+  
+  color:#FFF;
+  margin-left: 120px;
+  
+  margin-top: -10px;
+}
+
+.word-spacing4 .word1 
+{
+  margin-right: 100px;
+  display: inline-block;
+}
+
+.word-spacing4 .word2
+{
+  margin-right: 130px;
+  display: inline-block;
+}
+
+.word-spacing4 .word3 
+{
+  margin-right: 180px;
+  display: inline-block;
+}
+
+.word-spacing4 .word4 
+{
+  margin-right: 100px;
+  display: inline-block;
+}
+
+.word-spacing5
+{
+  
+  color:#FFF;
+  margin-left: 120px;
+  
+  margin-top: 20px;
+}
+
+.word-spacing5 .word1 
+{
+  margin-right: 100px;
+  display: inline-block;
+}
+
+.word-spacing5 .word2
+{
+  margin-right: 130px;
+  display: inline-block;
+}
+
+.word-spacing5 .word3 
+{
+  margin-right: 180px;
+  display: inline-block;
+}
+
+.word-spacing5 .word4 
+{
+  margin-right: 100px;
+  display: inline-block;
+}
+
+.separation_bar
+{
+  width: 800px;
+  margin-left: 100px;
+  border-width: 2px;
+  background-color: #14505c;
+
 }
