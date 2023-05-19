@@ -200,53 +200,52 @@
                     <!-- --------------------------------------- VOO + HOTEL --------------------------------------- -->
                     <section id="section-voohotel" class="hidden">
                         <h2>Voo + Hotel</h2>
-                        <label for="origem">Origem (Voo):</label>
-                        <input type="text" id="origem" name="origem" placeholder="Porto"><br>
+                        <label for="voohotelorigem">Origem (Voo):</label>
+                        <input type="text" id="voohotelorigem" name="voohotelorigem" placeholder="Porto"><br>
 
-                        <label for="origem">Destino (Voo):</label>
-                        <input type="text" id="destino" name="destino" placeholder="Amsterdão"><br>
+                        <label for="voohoteldestino">Destino (Voo):</label>
+                        <input type="text" id="voohoteldestino" name="voohoteldestino" placeholder="Amsterdão"><br>
 
                         <label for="voohotelpartida">Partida (Voo):</label>
+                            <div class="dropdown">
+                                <input type="text" id="voohotelpartida" name="voohotelpartida" placeholder="dd/mm/aaaa" readonly>
+                                <div class="dropdown-calendar" id="voohotelpartida-calendar"></div>
+                            </div>
+
+                        <label for="voohotelchegada">Chegada (Voo):</label>
                         <div class="dropdown">
-                            <input type="text" id="voohotelpartida" name="voohotelpartida" placeholder="dd/mm/aaaa"
-                                readonly>
-                            <div class="dropdown-calendar" id="voohotel-partida-calendar"></div>
+                            <input type="text" id="voohotelchegada" name="voohotelchegada" placeholder="dd/mm/aaaa" readonly>
+                            <div class="dropdown-calendar" id="voohotelchegada-calendar"></div>
                         </div>
 
-                        <label for="destino">Chegada (Voo):</label>
-                        <div class="dropdown">
-                            <input type="text" id="voohotelchegada" name="chegada" placeholder="dd/mm/aaaa" readonly>
-                            <div class="dropdown-calendar" id="chegada-calendar"></div>
-                        </div>
+                        <label for="voohotelquantidadedepessoas">Quantidade(Crianças-Adultos-Idosos):</label>
+                        <input type="text" id="voohotelquantidadepessoas" name="voohotelquantidadepessoas" placeholder="2-2-1"><br>
 
-                        <label for="origem">Quantidade(Crianças-Adultos-Idosos):</label>
-                        <input type="text" id="quantidadepessoas" name="quantidadepessoas" placeholder="2-2-1"><br>
-
-                        <label for="tipo-viagem">Tipo de Viagem:</label>
-                        <select id="tipo-viagem" name="tipo-viagem">
-                            <option value="ida">Apenas Ida</option>
-                            <option value="ida-volta">Ida e Volta</option>
+                        <label for="voohoteltipo-viagem">Tipo de Viagem:</label>
+                        <select id="voohoteltipo-viagem" name="tipo-viagem">
+                            <option value="voohotelida">Apenas Ida</option>
+                            <option value="voohotelida-volta">Ida e Volta</option>
                         </select>
 
-                        <label for="origem">Qualidade de Viagem:</label>
-                        <select id="qualquer" name="qualquer">
+                        <label for="voohotelqualidade">Qualidade de Viagem:</label>
+                        <select id="voohotelqualidade" name="voohotelqualidade">
                             <option value="ida">Económica</option>
                             <option value="ida-volta">Executiva</option>
                             <option value="ida-volta">Primeira Classe</option>
                         </select>
-                        <label for="origem">Localização (Hotel):</label>
-                        <input type="text" id="origem" name="origem" placeholder="Amsterdão"><br>
+                        <label for="voohotellocalizacao">Localização (Hotel):</label>
+                        <input type="text" id="voohotellocalizacao" name="voohotellocalizacao" placeholder="Amsterdão"><br>
 
-                        <label for="partida">Check In (Hotel):</label>
+                        <label for="voohotelcheckin">Check In (Hotel):</label>
                         <div class="dropdown">
-                            <input type="text" id="checkin" name="checkin" placeholder="dd/mm/aaaa" readonly>
-                            <div class="dropdown-calendar" id="checkin-calendar"></div>
+                            <input type="text" id="voohotelcheckin" name="voohotelcheckin" placeholder="dd/mm/aaaa" readonly>
+                            <div class="dropdown-calendar" id="voohotelcheckin-calendar"></div>
                         </div>
 
-                        <label for="destino">Check Out (Hotel):</label>
+                        <label for="voohotelcheckout">Check Out (Hotel):</label>
                         <div class="dropdown">
-                            <input type="text" id="checkout" name="checkout" placeholder="dd/mm/aaaa" readonly>
-                            <div class="dropdown-calendar" id="checkout-calendar"></div>
+                            <input type="text" id="voohotelcheckout" name="voohotelcheckout" placeholder="dd/mm/aaaa" readonly>
+                            <div class="dropdown-calendar" id="voohotelcheckout-calendar"></div>
                         </div>
 
                         <label for="categoria">Categoria:</label>
