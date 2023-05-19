@@ -1359,9 +1359,15 @@ select option {
   float: right;
 }
 
-
 /* Estilize as estrelas selecionadas */
 .rating input:checked~label,
 .rating input:checked~label~label {
   color: #ffdb58;
 }
+
+/* Estilize o hover nas estrelas */
+.rating label:hover,
+.rating label:hover~label {
+  color: #ffdb58;
+}
+
