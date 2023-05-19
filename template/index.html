@@ -50,10 +50,10 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="#perfil.html" class="nav__logo2">Perfil</a>
+                        <a href="profile.html" class="nav__logo2">Perfil</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#signup.html" class="nav__logo2">Logout</a>
+                        <a href="login.html" class="nav__logo2">Logout</a>
                     </li>
 
                 </ul>
@@ -105,7 +105,7 @@
 
         <!--==================== voo/hotel ====================-->
         <section class="voohotel" id="voo/hotel">
-            <h2 class="section__title"></h2>
+            <h2 class="section__title">Voo/Hotel</h2>
             <p class="video__description">Aqui podes escolher se queres marcar apenas Voos, apenas Hotel ou ambos!</p>
             <div id="headervoohotel">
                 <nav>
@@ -153,7 +153,8 @@
                                 <option value="ida-volta">Executiva</option>
                                 <option value="ida-volta">Primeira Classe</option>
                             </select>
-                            <input type="submit" value="Confirmar">
+                            <input type="submit" value="Confirmar"
+                                onclick="window.location.href = 'voo.html'; return false;">
                         </form>
                     </section>
                     <!-- --------------------------------------- HOTEL --------------------------------------- -->
@@ -193,74 +194,87 @@
                             </div>
 
 
-                            <input type="submit" value="Confirmar">
+                            <input type="submit" value="Confirmar"
+                                onclick="window.location.href = 'hotel.html'; return false;">
                         </form>
                     </section>
 
                     <!-- --------------------------------------- VOO + HOTEL --------------------------------------- -->
                     <section id="section-voohotel" class="hidden">
                         <h2>Voo + Hotel</h2>
-                        <label for="voohotelorigem">Origem (Voo):</label>
-                        <input type="text" id="voohotelorigem" name="voohotelorigem" placeholder="Porto"><br>
+                        <form>
+                            <label for="voohotelorigem">Origem (Voo):</label>
+                            <input type="text" id="voohotelorigem" name="voohotelorigem" placeholder="Porto"><br>
 
-                        <label for="voohoteldestino">Destino (Voo):</label>
-                        <input type="text" id="voohoteldestino" name="voohoteldestino" placeholder="Amsterdão"><br>
+                            <label for="voohoteldestino">Destino (Voo):</label>
+                            <input type="text" id="voohoteldestino" name="voohoteldestino" placeholder="Amsterdão"><br>
 
-                        <label for="voohotelpartida">Partida (Voo):</label>
+                            <label for="voohotelpartida">Partida (Voo):</label>
                             <div class="dropdown">
-                                <input type="text" id="voohotelpartida" name="voohotelpartida" placeholder="dd/mm/aaaa" readonly>
+                                <input type="text" id="voohotelpartida" name="voohotelpartida" placeholder="dd/mm/aaaa"
+                                    readonly>
                                 <div class="dropdown-calendar" id="voohotelpartida-calendar"></div>
                             </div>
 
-                        <label for="voohotelchegada">Chegada (Voo):</label>
-                        <div class="dropdown">
-                            <input type="text" id="voohotelchegada" name="voohotelchegada" placeholder="dd/mm/aaaa" readonly>
-                            <div class="dropdown-calendar" id="voohotelchegada-calendar"></div>
-                        </div>
+                            <label for="voohotelchegada">Chegada (Voo):</label>
+                            <div class="dropdown">
+                                <input type="text" id="voohotelchegada" name="voohotelchegada" placeholder="dd/mm/aaaa"
+                                    readonly>
+                                <div class="dropdown-calendar" id="voohotelchegada-calendar"></div>
+                            </div>
 
-                        <label for="voohotelquantidadedepessoas">Quantidade(Crianças-Adultos-Idosos):</label>
-                        <input type="text" id="voohotelquantidadepessoas" name="voohotelquantidadepessoas" placeholder="2-2-1"><br>
+                            <label for="voohotelquantidadedepessoas">Quantidade(Crianças-Adultos-Idosos):</label>
+                            <input type="text" id="voohotelquantidadepessoas" name="voohotelquantidadepessoas"
+                                placeholder="2-2-1"><br>
 
-                        <label for="voohoteltipo-viagem">Tipo de Viagem:</label>
-                        <select id="voohoteltipo-viagem" name="tipo-viagem">
-                            <option value="voohotelida">Apenas Ida</option>
-                            <option value="voohotelida-volta">Ida e Volta</option>
-                        </select>
+                            <label for="voohoteltipo-viagem">Tipo de Viagem:</label>
+                            <select id="voohoteltipo-viagem" name="tipo-viagem">
+                                <option value="voohotelida">Apenas Ida</option>
+                                <option value="voohotelida-volta">Ida e Volta</option>
+                            </select>
 
-                        <label for="voohotelqualidade">Qualidade de Viagem:</label>
-                        <select id="voohotelqualidade" name="voohotelqualidade">
-                            <option value="ida">Económica</option>
-                            <option value="ida-volta">Executiva</option>
-                            <option value="ida-volta">Primeira Classe</option>
-                        </select>
-                        <label for="voohotellocalizacao">Localização (Hotel):</label>
-                        <input type="text" id="voohotellocalizacao" name="voohotellocalizacao" placeholder="Amsterdão"><br>
+                            <label for="voohotelqualidade">Qualidade de Viagem:</label>
+                            <select id="voohotelqualidade" name="voohotelqualidade">
+                                <option value="ida">Económica</option>
+                                <option value="ida-volta">Executiva</option>
+                                <option value="ida-volta">Primeira Classe</option>
+                            </select>
 
-                        <label for="voohotelcheckin">Check In (Hotel):</label>
-                        <div class="dropdown">
-                            <input type="text" id="voohotelcheckin" name="voohotelcheckin" placeholder="dd/mm/aaaa" readonly>
-                            <div class="dropdown-calendar" id="voohotelcheckin-calendar"></div>
-                        </div>
+                            <label for="voohotellocalizacao">Localização (Hotel):</label>
+                            <input type="text" id="voohotellocalizacao" name="voohotellocalizacao"
+                                placeholder="Amsterdão"><br>
 
-                        <label for="voohotelcheckout">Check Out (Hotel):</label>
-                        <div class="dropdown">
-                            <input type="text" id="voohotelcheckout" name="voohotelcheckout" placeholder="dd/mm/aaaa" readonly>
-                            <div class="dropdown-calendar" id="voohotelcheckout-calendar"></div>
-                        </div>
+                            <label for="voohotelcheckin">Check In (Hotel):</label>
+                            <div class="dropdown">
+                                <input type="text" id="voohotelcheckin" name="voohotelcheckin" placeholder="dd/mm/aaaa"
+                                    readonly>
+                                <div class="dropdown-calendar" id="voohotelcheckin-calendar"></div>
+                            </div>
 
-                        <label for="categoria">Categoria:</label>
-                        <div class="rating">
-                            <input type="radio" id="voohotel-star5" name="voohotel-categoria" value="5">
-                            <label for="voohotel-star5" title="5 estrelas">&#9733;</label>
-                            <input type="radio" id="voohotel-star4" name="voohotel-categoria" value="4">
-                            <label for="voohotel-star4" title="4 estrelas">&#9733;</label>
-                            <input type="radio" id="voohotel-star3" name="voohotel-categoria" value="3">
-                            <label for="voohotel-star3" title="3 estrelas">&#9733;</label>
-                            <input type="radio" id="voohotel-star2" name="voohotel-categoria" value="2">
-                            <label for="voohotel-star2" title="2 estrelas">&#9733;</label>
-                            <input type="radio" id="voohotel-star1" name="voohotel-categoria" value="1">
-                            <label for="voohotel-star1" title="1 estrela">&#9733;</label>
-                        </div>
+                            <label for="voohotelcheckout">Check Out (Hotel):</label>
+                            <div class="dropdown">
+                                <input type="text" id="voohotelcheckout" name="voohotelcheckout"
+                                    placeholder="dd/mm/aaaa" readonly>
+                                <div class="dropdown-calendar" id="voohotelcheckout-calendar"></div>
+                            </div>
+
+                            <label for="categoria">Categoria:</label>
+                            <div class="rating">
+                                <input type="radio" id="voohotel-star5" name="voohotel-categoria" value="5">
+                                <label for="voohotel-star5" title="5 estrelas">&#9733;</label>
+                                <input type="radio" id="voohotel-star4" name="voohotel-categoria" value="4">
+                                <label for="voohotel-star4" title="4 estrelas">&#9733;</label>
+                                <input type="radio" id="voohotel-star3" name="voohotel-categoria" value="3">
+                                <label for="voohotel-star3" title="3 estrelas">&#9733;</label>
+                                <input type="radio" id="voohotel-star2" name="voohotel-categoria" value="2">
+                                <label for="voohotel-star2" title="2 estrelas">&#9733;</label>
+                                <input type="radio" id="voohotel-star1" name="voohotel-categoria" value="1">
+                                <label for="voohotel-star1" title="1 estrela">&#9733;</label>
+                            </div>
+
+                            <input type="submit" value="Confirmar"
+                                onclick="window.location.href = 'voo.html'; return false;">
+
 
                         </form>
                     </section>

@@ -168,6 +168,8 @@ input {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 4.5rem 0 2.5rem;
+  color: #333;
+
 }
 
 .section__title {
@@ -1251,6 +1253,7 @@ label {
 input[type="text"] {
   border: solid;
   border-radius: 4px ;
+  background-color: #ffffffb2;
   border-color: rgba(3, 132, 134, 0.726);
   border-width: 2px;
   width: 300px;
@@ -1275,12 +1278,15 @@ select {
   width: 300px;
   padding: 5px;
   margin-bottom: 10px;
-  background-color: #fff;
-  color: #333;
+  background-color: #ffffffb2;
   border: none;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: solid;
+  border-radius: 4px;
+  border-color: rgba(3, 132, 134, 0.726);
 }
+
 
 select:focus {
   outline: none;
