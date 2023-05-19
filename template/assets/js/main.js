@@ -243,15 +243,27 @@ document.getElementById("chegada").addEventListener("click", function () {
   toggleCalendar("chegada");
 });
 
+document.getElementById("checkin").addEventListener("click", function () {
+  toggleCalendar("checkin");
+});
+
+// Evento de clique no campo de chegada para exibir/ocultar o calendário
+document.getElementById("checkout").addEventListener("click", function () {
+  toggleCalendar("checkout");
+});
+
+
 // Evento de clique fora do calendário para ocultá-lo
 document.addEventListener("click", function (event) {
   var dropdowns = document.getElementsByClassName("dropdown-calendar");
   var partidaInput = document.getElementById("partida");
   var chegadaInput = document.getElementById("chegada");
+  var checkinInput = document.getElementById("checkin");
+  var checkoutInput = document.getElementById("checkout");
 
   for (var i = 0; i < dropdowns.length; i++) {
     var dropdown = dropdowns[i];
-    if (!dropdown.contains(event.target) && event.target !== partidaInput && event.target !== chegadaInput) {
+    if (!dropdown.contains(event.target) && event.target !== partidaInput && event.target !== chegadaInput && event.target !== checkinInput && event.target !== checkoutInput) {
       dropdown.style.display = "none";
     }
   }
@@ -317,5 +329,6 @@ function generateCalendar(calendarId, inputId) {
 // Inicializa os calendários
 generateCalendar("partida-calendar", "partida");
 generateCalendar("chegada-calendar", "chegada");
-
+generateCalendar("checkin-calendar", "checkin");
+generateCalendar("checkout-calendar", "checkout");
 

@@ -99,18 +99,7 @@
                     </a>
                 </div>
 
-                <!-- <div class="home__info">
-                    <div>
-                        <span class="home__info-title">5 best places to visit</span>
-                        <a href="" class="button button--flex button--link home__info-button">
-                            More <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
 
-                    <div class="home__info-overlay">
-                        <img src="assets/img/home2.jpg" alt="" class="home__info-img">
-                    </div>
-                </div> -->
             </div>
         </section>
 
@@ -130,10 +119,10 @@
                         <h2>Voo</h2>
                         <form>
                             <label for="origem">Origem:</label>
-                            <input type="text" id="origem" name="origem"><br>
+                            <input type="text" id="origem" name="origem" placeholder="Porto"><br>
 
                             <label for="origem">Destino:</label>
-                            <input type="text" id="destino" name="destino"><br>
+                            <input type="text" id="destino" name="destino" placeholder="Amsterdão"><br>
 
                             <label for="partida">Partida:</label>
                             <div class="dropdown">
@@ -147,8 +136,8 @@
                                 <div class="dropdown-calendar" id="chegada-calendar"></div>
                             </div>
 
-                            <label for="origem">Quantidade de Pessoas:</label>
-                            <input type="text" id="quantidadepessoas" name="quantidadepessoas"><br>
+                            <label for="origem">Quantidade (Crianças-Adultos-Idosos):</label>
+                            <input type="text" id="quantidadepessoas" name="quantidadepessoas" placeholder="2-2-1"><br>
 
                             <label for="tipo-viagem">Tipo de Viagem:</label>
                             <select id="tipo-viagem" name="tipo-viagem">
@@ -169,13 +158,38 @@
                     <section id="section-hotel" class="hidden">
                         <h2>Hotel</h2>
                         <form>
-                            <label for="localizacao">Localização:</label>
-                            <input type="text" id="localizacao" name="localizacao"><br>
+                            <label for="origem">Localização:</label>
+                            <input type="text" id="origem" name="origem" placeholder="Amsterdão"><br>
 
-                            <label for="checkin">Check-in:</label>
-                            <input type="text" id="checkin" name="checkin"><br>
+                            <label for="partida">Check In:</label>
+                            <div class="dropdown">
+                                <input type="text" id="checkin" name="checkin" placeholder="dd/mm/aaaa" readonly>
+                                <div class="dropdown-calendar" id="checkin-calendar"></div>
+                            </div>
 
-                            <!-- Restante dos campos do formulário para hotel -->
+                            <label for="destino">Check Out:</label>
+                            <div class="dropdown">
+                                <input type="text" id="checkout" name="checkout" placeholder="dd/mm/aaaa" readonly>
+                                <div class="dropdown-calendar" id="checkout-calendar"></div>
+                            </div>
+
+                            <label for="origem">Quantidade(Crianças-Adultos-Idosos):</label>
+                            <input type="text" id="quantidadepessoas" name="quantidadepessoas" placeholder="2-2-1"><br>
+
+                            <label for="categoria">Categoria:</label>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="categoria" value="5">
+                                <label for="star5" title="5 estrelas">&#9733;</label>
+                                <input type="radio" id="star4" name="categoria" value="4">
+                                <label for="star4" title="4 estrelas">&#9733;</label>
+                                <input type="radio" id="star3" name="categoria" value="3">
+                                <label for="star3" title="3 estrelas">&#9733;</label>
+                                <input type="radio" id="star2" name="categoria" value="2">
+                                <label for="star2" title="2 estrelas">&#9733;</label>
+                                <input type="radio" id="star1" name="categoria" value="1">
+                                <label for="star1" title="1 estrela">&#9733;</label>
+                            </div>
+
 
                             <input type="submit" value="Confirmar">
                         </form>
@@ -183,15 +197,56 @@
 
                     <section id="section-voohotel" class="hidden">
                         <h2>Voo + Hotel</h2>
-                        <form>
-                            <label for="origem2">Origem:</label>
-                            <input type="text" id="origem2" name="origem2"><br>
+                        <label for="origem">Origem (Voo):</label>
+                        <input type="text" id="origem" name="origem" placeholder="Porto"><br>
 
-                            <label for="destino2">Destino:</label>
-                            <input type="text" id="destino2" name="destino2"><br>
+                        <label for="origem">Destino (Voo):</label>
+                        <input type="text" id="destino" name="destino" placeholder="Amsterdão"><br>
 
-                            <!-- Restante dos campos do formulário para voo + hotel -->
-                            <input type="submit" value="Confirmar">
+                        <label for="partida">Partida (Voo):</label>
+                        <div class="dropdown">
+                            <input type="text" id="partida" name="partida" placeholder="dd/mm/aaaa" readonly>
+                            <div class="dropdown-calendar" id="partida-calendar"></div>
+                        </div>
+
+                        <label for="destino">Chegada (Voo):</label>
+                        <div class="dropdown">
+                            <input type="text" id="chegada" name="chegada" placeholder="dd/mm/aaaa" readonly>
+                            <div class="dropdown-calendar" id="chegada-calendar"></div>
+                        </div>
+
+                        <label for="origem">Quantidade(Crianças-Adultos-Idosos):</label>
+                        <input type="text" id="quantidadepessoas" name="quantidadepessoas" placeholder="2-2-1"><br>
+
+                        <label for="tipo-viagem">Tipo de Viagem:</label>
+                        <select id="tipo-viagem" name="tipo-viagem">
+                            <option value="ida">Apenas Ida</option>
+                            <option value="ida-volta">Ida e Volta</option>
+                        </select>
+
+                        <label for="origem">Qualidade de Viagem:</label>
+                        <select id="qualquer" name="qualquer">
+                            <option value="ida">Económica</option>
+                            <option value="ida-volta">Executiva</option>
+                            <option value="ida-volta">Primeira Classe</option>
+                        </select>
+                        <label for="origem">Localização (Hotel):</label>
+                        <input type="text" id="origem" name="origem" placeholder="Amsterdão"><br>
+
+                        <label for="partida">Check In (Hotel):</label>
+                        <div class="dropdown">
+                            <input type="text" id="checkin" name="checkin" placeholder="dd/mm/aaaa" readonly>
+                            <div class="dropdown-calendar" id="checkin-calendar"></div>
+                        </div>
+
+                        <label for="destino">Check Out (Hotel):</label>
+                        <div class="dropdown">
+                            <input type="text" id="checkout" name="checkout" placeholder="dd/mm/aaaa" readonly>
+                            <div class="dropdown-calendar" id="checkout-calendar"></div>
+                        </div>
+
+                    
+
                         </form>
                     </section>
                 </div>
