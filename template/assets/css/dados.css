@@ -1494,3 +1494,45 @@ input {
   display: inline;
 
 }
+
+.pagamento_choice
+{
+  margin-left: 160px;
+  position: absolute;
+  margin-top: 20px;
+}
+
+.option_checker2{
+  margin-left: 40px;
+  display: inline;
+
+}
+
+.cartao-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-top: 120px;
+  margin-left: 100px;
+}
+
+.form-group1007 {
+  margin-right: 20px;
+}
+
+.confirmation_button
+{
+  height: 60px;
+  width: 200px;
+  margin-left: 665px;
+  background-color: rgb(27, 150, 172);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.confirmation_button:hover {
+  background-color: rgb(10, 150, 10);
+}
