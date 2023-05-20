@@ -157,13 +157,13 @@
                     <br><br><br>
                     <h3 class="footer__title" style="margin-top:-70px">Pesquisar</h3><br><br><br>
                     <label for="origem">Destino</label><br>
-                    <input type="text" id="quantidadepessoas"style="border-color: rgba(3, 132, 134, 0.726);" name="quantidadepessoas" placeholder="2-2-1"><br>
+                    <input type="text" id="quantidadepessoas"style="border-color: rgba(3, 132, 134, 0.726);" name="quantidadepessoas" placeholder="Lisboa"><br>
                 </div>
                 <div class="column2 two" style="background-color: var(--body-color);">
                     <form>
                         <label for="hotelpartida" style="margin-top:92px">Inicio</label>
                         <div class="dropdown">
-                            <input type="text" id="hotelpartida" style="height: 36px ;" name="hotelpartida" placeholder="dd/mm/aaaa" readonly>
+                            <input type="text" id="hotelpartida" style="height: 36px ;" name="hotelpartida" placeholder="01/05/2023" readonly>
                             <div class="dropdown-calendar" id="hotelpartida-calendar"></div>
                         </div>
                     </form>
@@ -172,7 +172,7 @@
                     <form>
                         <label for="hotelchegada" style="margin-top:92px">Fim</label>
                         <div class="dropdown">
-                            <input type="text" id="hotelchegada" style="height: 36px ;" name="hotelchegada" placeholder="dd/mm/aaaa" readonly>
+                            <input type="text" id="hotelchegada" style="height: 36px ;" name="hotelchegada" placeholder="31/05/2023" readonly>
                             <div class="dropdown-calendar" id="hotelchegada-calendar"></div>
                         </div>
                     </form>
@@ -180,29 +180,44 @@
                 <div class="column2 four" style="background-color: var(--body-color);">
                     <form>
                         <label for="origem"style="margin-top:92px">Adultos</label>
-                        <input type="text" id="quantidadepessoas"style="border-color: rgba(3, 132, 134, 0.726);" name="quantidadepessoas" placeholder="Quantidade"><br>
+                        <input type="text" id="quantidadepessoas"style="border-color: rgba(3, 132, 134, 0.726);" name="quantidadepessoas" placeholder="2 - 1(Idoso)"><br>
                     </form>
                 </div>
                 <div class="column2 five" style="background-color: var(--body-color);">
                     <form>
                         <label for="origem" style="margin-top:92px">Quartos</label>
-                        <input type="text" id="quantidadepessoas"style="border-color: rgba(3, 132, 134, 0.726);" name="quantidadepessoas" placeholder="Quantidade"><br>
+                        <input type="text" id="quantidadepessoas"style="border-color: rgba(3, 132, 134, 0.726);" name="quantidadepessoas" placeholder="3"><br>
                     </form>
                 </div>
                 <div class="column2 six" style="background-color: var(--body-color);">
                     <form>
                         <label for="origem" style="margin-top:92px">Crianças</label>
-                        <input type="text" id="quantidadepessoas"style="border-color: rgba(3, 132, 134, 0.726);" name="quantidadepessoas" placeholder="Quantidade"><br>
+                        <input type="text" id="quantidadepessoas"style="border-color: rgba(3, 132, 134, 0.726);" name="quantidadepessoas" placeholder="2"><br>
                     </form>
                 </div>
                 
                 
             </div>
         </section>
+        <section>
+            <div class="row " style="position: relative;width: 1000px;height: 50px;border-radius: 25px;border: 2px solid #8ccbe6;margin-left: 400px;margin-bottom: 10px;margin-top: -20px">
+                <h3 style="text-align: center; margin-top: 12px" > Lisboa : 1 543 Hotéis Encontrados
+                </h3>
+            </div>
+        </section>
+        <section>
+            <select id="qualquer" name="qualquer">
+                <option value="ida-volta">Ordenar por: Melhores Classificados</option>
+                <option value="ida">Ordenar por: + Preço</option>
+                <option value="ida-volta">Ordenar por: - Preço</option>
+                <option value="ida-volta">Ordenar por: + Estrelas</option>
+                <option value="ida-volta">Ordenar por: - Estrelas</option>
+            </select>
+        </section>
         
         <!--==================== hotel 1 ====================-->
         <section class="about section" id="voo/hotel">
-            <div class="row " style="position: relative;width: 1000px;height: 400px;border-radius: 25px;border: 2px solid #8ccbe6;margin-left: 400px;">
+            <div class="row " style="position: relative;width: 1000px;height: 400px;border-radius: 25px;border: 2px solid #8ccbe6;margin-left: 400px;margin-top: -20px;">
                 <div class="column left" style="background-color: var(--body-color);">
                     <div class="about__img-overlay">
                         <img src="assets/img/aboutw1.jpg" alt="" class="about__img-one">
@@ -213,23 +228,23 @@
                     </div>
                 </div>
                 <div class="column middle" style="background-color: var(--body-color);">
-                    <h2 >What a Epic Hotel <br> *Location*</h2><br><br>
+                    <h2 >What a Epic Hotel </h2><br><h2 style="font-size: 20px;"> Lisboa, Campolide</h2><br><br>
                     <p >Quarto Duplo Económico C/ WC Partilhada
                     </p><br>
                     <p style="color: green ">Cancelamento <b>Gratuito</b> !</p>
                     <p style="color: green">Pequeno-Almoço <b>Incluído</b> !</p><br>
-                    <br><br><br><br><br>
+                    <br><br><br><br>
                     <a href="#reserva" style = "text-align:center;display:block;" class="button">Confirmar</a>  <!-- href="reserva.html" a do checkout -->
                     
                     
                 </div>
                 <div class="column fixed-right" style="background-color: var(--body-color);">
-                    <h3 class="footer__title" style="margin-left: 110px;">5 &#11088</h3>  <br>
+                    <h3 class="footer__title" style="margin-left: 110px;">3 &#11088</h3>  <br>
                     <h2> Muito Bom !</h2>
                     <h2 style="font-size: 20px;"> 354 Comentários</h2><br>
                     
                     <br><br><br>
-                    <p >*x* Noites, *y* adultos
+                    <p >5 Noites, 3 adultos
                     </p>
                     <p>1 536 €</p>
                     <p>Inclui Impostos e Taxas</p>
@@ -253,12 +268,12 @@
                     </div>
                 </div>
                 <div class="column middle" style="background-color: var(--body-color);">
-                    <h2 >What a Epic MANSION <br> *Location*</h2><br><br>
+                    <h2 >What a Epic MANSION </h2><br><h2 style="font-size: 20px;">Lisboa, Azul</h2><br><br>
                     <p >Quarto TRIPLO Económico C/ WC Partilhada
                     </p><br>
                     <p style="color: green ">Cancelamento <b>Gratuito</b> !</p>
                     <p style="color: green">Pequeno-Almoço e Jantar <b>Incluído</b> !</p><br>
-                    <br><br><br><br><br>
+                    <br><br><br><br>
                     <a href="#reserva" style = "text-align:center;display:block;" class="button">Confirmar</a>  <!-- href="reserva.html" a do checkout -->
                     
                     
@@ -269,7 +284,7 @@
                     <h2 style="font-size: 20px;"> 354 Comentários</h2><br>
                     
                     <br><br><br>
-                    <p >5 Noites, 3 adultos
+                    <p >*x* Noites, *y* adultos
                     </p>
                     <p> 642 €</p>
                     <p>Inclui Impostos e Taxas</p>
