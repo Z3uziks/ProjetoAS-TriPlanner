@@ -154,4 +154,15 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+//Pop up code
+document.addEventListener('DOMContentLoaded', function() {
+  const popupContainer = document.getElementById('popupContainer');
+  const closePopupButton = document.getElementById('closePopup');
+
+  popupContainer.style.display = 'block';
+
+  closePopupButton.addEventListener('click', function() {
+    popupContainer.style.display = 'none';
+  });
+});
 
