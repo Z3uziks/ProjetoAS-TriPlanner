@@ -181,43 +181,14 @@ function selectDate(inputId, day, month, year) {
 }
 
 // Evento de clique no campo de partida para exibir/ocultar o calendário
-document.getElementById("partida").addEventListener("click", function () {
-  toggleCalendar("partida");
+document.getElementById("hotelpartida").addEventListener("click", function () {
+  toggleCalendar("hotelpartida");
 });
 
 // Evento de clique no campo de chegada para exibir/ocultar o calendário
-document.getElementById("chegada").addEventListener("click", function () {
-  toggleCalendar("chegada");
+document.getElementById("hotelchegada").addEventListener("click", function () {
+  toggleCalendar("hotelchegada");
 });
-
-document.getElementById("checkin").addEventListener("click", function () {
-  toggleCalendar("checkin");
-});
-
-// Evento de clique no campo de chegada para exibir/ocultar o calendário
-document.getElementById("checkout").addEventListener("click", function () {
-  toggleCalendar("checkout");
-});
-
-document.getElementById("voohotelpartida").addEventListener("click", function () {
-  toggleCalendar("voohotelpartida");
-});
-
-// Evento de clique no campo de chegada para exibir/ocultar o calendário
-document.getElementById("voohotelchegada").addEventListener("click", function () {
-  toggleCalendar("voohotelchegada");
-});
-
-document.getElementById("voohotelcheckin").addEventListener("click", function () {
-  toggleCalendar("voohotelcheckin");
-});
-
-// Evento de clique no campo de chegada para exibir/ocultar o calendário
-document.getElementById("voohotelcheckout").addEventListener("click", function () {
-  toggleCalendar("voohotelcheckout");
-});
-
-
 
 
 
@@ -225,18 +196,13 @@ document.getElementById("voohotelcheckout").addEventListener("click", function (
 // Evento de clique fora do calendário para ocultá-lo
 document.addEventListener("click", function (event) {
   var dropdowns = document.getElementsByClassName("dropdown-calendar");
-  var partidaInput = document.getElementById("partida");
-  var chegadaInput = document.getElementById("chegada");
-  var checkinInput = document.getElementById("checkin");
-  var checkoutInput = document.getElementById("checkout");
-  var voohotelpartidaInput = document.getElementById("voohotelpartida");
-  var voohotelchegadaInput = document.getElementById("voohotelchegada");
-  var voohotelcheckinInput = document.getElementById("voohotelcheckin");
-  var voohotelcheckoutInput = document.getElementById("voohotelcheckout");
+  var partidaInput = document.getElementById("hotelpartida");
+  var chegadaInput = document.getElementById("hotelchegada");
+
 
   for (var i = 0; i < dropdowns.length; i++) {
     var dropdown = dropdowns[i];
-    if (!dropdown.contains(event.target) && event.target !== partidaInput && event.target !== chegadaInput && event.target !== checkinInput && event.target !== checkoutInput && event.target !== voohotelpartidaInput && event.target !== voohotelchegadaInput && event.target !== voohotelcheckinInput && event.target !== voohotelcheckoutInput) {
+    if (!dropdown.contains(event.target) && event.target !== partidaInput && event.target !== chegadaInput) {
       dropdown.style.display = "none";
     }
   }
@@ -300,12 +266,5 @@ function generateCalendar(calendarId, inputId) {
 }
 
 // Inicializa os calendários
-generateCalendar("partida-calendar", "partida");
-generateCalendar("chegada-calendar", "chegada");
-generateCalendar("checkin-calendar", "checkin");
-generateCalendar("checkout-calendar", "checkout");
-generateCalendar("voohotelpartida-calendar", "voohotelpartida");
-generateCalendar("voohotelchegada-calendar", "voohotelchegada");
-generateCalendar("voohotelcheckin-calendar", "voohotelcheckin");
-generateCalendar("voohotelcheckout-calendar", "voohotelcheckout");
-
+generateCalendar("hotelpartida-calendar", "hotelpartida");
+generateCalendar("hotelchegada-calendar", "hotelchegada");

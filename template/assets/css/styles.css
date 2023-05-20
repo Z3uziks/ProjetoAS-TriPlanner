@@ -630,6 +630,8 @@ input {
 .place__content,
 .place__title {
   color: var(--white-color);
+  border: #333;
+  border-radius: 10px;
 }
 
 .place__content {
@@ -662,11 +664,19 @@ input {
 .place__subtitle,
 .place__price {
   display: block;
+  background-color: rgba(0, 0, 0, 0.395);
+  padding: .25rem .5rem;
+  border-radius: 5px;
 }
 
 .place__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-25);
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.395);
+  padding: .25rem .5rem;
+  border-radius: 5px;
+  
 }
 
 .place__subtitle {
