@@ -67,7 +67,7 @@
 
     <main class="main">
 
-        <!--==================== RESERVA ====================-->
+        <!--==================== QUEM IRÁ VIAJAR ====================-->
         <section class="subscribe section">
             <div class="subscribe__bg">
                 <div class="subscribe__container container">
@@ -96,7 +96,7 @@
                                 
                                 <div class="form-group">
                                     <form>
-                                      <label for="email" style="color:#fff">Apelido:</label>
+                                      <label for="lastname" style="color:#fff">Apelido:</label>
                                       <input type="text" id="lastname" name="lastname">
                                       
                                     </form>
@@ -107,8 +107,8 @@
                             <div class="form-container2">
                                 <div class="form-group">
                                     <form>
-                                        <label for="name" style="color:#fff">Telefone:</label>
-                                        <input type="number" id="telephone" name="telephone">
+                                        <label for="telephone" style="color:#fff">Telefone:</label>
+                                        <input type="tel" id="telephone" name="telephone">
                                         
                                     </form>
                                 </div>
@@ -116,7 +116,7 @@
                                 <div class="form-group">
                                     <form>
                                       <label for="email" style="color:#fff">&nbsp&nbsp&nbsp&nbspIdade:</label>
-                                      <input type="number" id="age" name="age">
+                                      <input type="date" id="age" name="age" placeholder="dd/mm/aaaa">
                                       
                                     </form>
                                 </div>
@@ -136,6 +136,64 @@
 
                         </div>
 
+                        <h1 class = "adulto_2"><u>Adulto 2</u>
+                            <div class = "checkbox-wrapper1">
+                                <input type="checkbox" id="myCheckbox">
+                                <label for="myCheckbox">Responsável da reserva</label>
+                            </div>
+                        </h1>
+
+                        <div class="thin_rectangle3">
+                            <div class="form-container1">
+                                <div class="form-group">
+                                    <form>
+                                        <label for="name" style="color:#fff">Primeiro nome:</label>
+                                        <input type="text" id="name" name="name">
+                                        
+                                    </form>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <form>
+                                      <label for="lastname" style="color:#fff">Apelido:</label>
+                                      <input type="text" id="lastname" name="lastname">
+                                      
+                                    </form>
+                                </div>
+                
+                            </div>
+
+                            <div class="form-container2">
+                                <div class="form-group">
+                                    <form>
+                                        <label for="name" style="color:#fff">Telefone:</label>
+                                        <input type="tel" id="telephone" name="telephone">
+                                        
+                                    </form>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <form>
+                                      <label for="email" style="color:#fff">&nbsp&nbsp&nbsp&nbspIdade:</label>
+                                      <input type="date" id="age" name="age" placeholder="dd/mm/aaaa">
+                                      
+                                    </form>
+                                </div>
+                
+                            </div>
+
+                            <div class = "checkbox-wrapper2">
+                                <input type="checkbox" id="myCheckbox">
+                                <label for="myCheckbox" style="color:#fff"><strong>Dados de identificação (opcional)</strong></label>
+                            </div>
+                            
+                            <div class = "checkbox-wrapper3">
+                                <input type="checkbox" id="myCheckbox">
+                                <label for="myCheckbox" style="color:#fff"><strong>Passageiro frequente (opcional)</strong></label>
+                            </div>
+                        
+
+                        </div>
 
                     </div>
 
@@ -143,7 +201,91 @@
             </div>
         </section>
 
-        
+
+        <!--==================== DADOS DE FATURACAO ====================-->
+        <section class="subscribe section" style="margin-top: -100px;">
+            <div class="subscribe__bg">
+                <div class="subscribe__container container">
+                    <h1 class ="reserva_header" align="center">Dados de faturação</h1>
+                    
+                    <div class="rectangle" style="height:340px">
+                        <h1 class = "voo_header"><u></u>
+                            <div class = "checkbox-wrapper1">
+                            </div>
+                        </h1>
+
+                        
+                        
+                        
+                        <div class="thin_rectangle2" style="height:200px">
+                            <div class="form-container1" style="margin-left: 159px;">
+                                <div class="form-group">
+                                    <form>
+                                        <label for="name" style="color:#fff">Morada:</label>
+                                        <input type="text" id="name" name="name">
+                                        
+                                    </form>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <form>
+                                      <label for="postalcode" style="color:#fff">Código postal:</label>
+                                      <input type="text" id="lastname" name="lastname" placeholder="ex.: 1200-123 Lisboa">
+                                      
+                                    </form>
+                                </div>
+                
+                            </div>
+
+                            <div class="form-container2" style="margin-left: 137px;">
+                                <div class="form-group">
+                                    <form>
+                                        <label for="name" style="color:#fff">Localidade:</label>
+                                        <input type="text" id="location" name="location">
+                                        
+                                    </form>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <form>
+                                      <label for="country" style="color:#fff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPaís:</label>
+                                      <input type="text" id="country" name="country">
+                                      
+                                    </form>
+                                </div>
+                
+                            </div>
+
+                            <div class="form-container3" style="margin-left: 137px;">
+                                <div class="form-group">
+                                    <form>
+                                        <label for="NIF" style="color:#fff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNIF:</label>
+                                        <input type="number" id="NIF" name="NIF">
+                                        
+                                    </form>
+                                </div>
+                                
+                
+                            </div>
+                            
+                            <h3 class="empresa_choice" style="color: #fff;"><strong>Empresa?</strong>
+                                <div class="option_checker">
+                                    <label>
+                                    <input type="radio" name="choice-radio">
+                                    Sim
+                                    </label>
+                                    <label>
+                                    <input type="radio" name="choice-radio">
+                                    Não
+                                    </label>
+                                </div>
+                            </h3>
+                        </div>    
+                    </div>
+
+                </div>
+            </div>
+        </section>
         
         <!--==================== SPONSORS ====================-->
         <section class="sponsor section">
