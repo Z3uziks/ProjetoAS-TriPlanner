@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/reserva.css">
+    <link rel="stylesheet" href="assets/css/dados.css">
 
     <!--=============== ChatBot ===============-->
     <link rel="stylesheet" href="ChatBot/static/css/chat.css">
@@ -32,10 +32,10 @@
                     <a href="index.html" class="nav__logo">TriPlanner</a>
 
                     <li class="nav__item">
-                        <a href="reserva.html" class="nav__link active-link">A sua reserva</a><!--     -->
+                        <a href="reserva.html" class="nav__link">A sua reserva</a><!--     -->
                     </li>
                     <li class="nav__item">
-                        <a href="dados.html" class="nav__link">Os seus dados</a>
+                        <a href="dados.html" class="nav__link active-link">Os seus dados</a>
                     </li>
                     <li class="nav__item">
                         <a href="confirmation.html" class="nav__link">Confirmação</a><!--     -->
@@ -67,95 +67,73 @@
 
     <main class="main">
 
-        <div id="popupContainer">
-            <div id="popupContent">
-                <button id="closePopup"><span>x</span></button>
-                <h2 class="move_text2">Vai precisar de automóvel?</h2>
-                <p class="move_text">clique <strong><a class="guerin-link" href="https://www.guerin.pt/pt/" target="_blank" rel="noopener noreferrer" style="color:rgb(0, 38, 255)">aqui</a></strong> para alugar.</p>
-                <p class="move_text"><strong>-Parceria com Guerin™</strong></p>
-            </div>
-        </div>
-        
-
         <!--==================== RESERVA ====================-->
         <section class="subscribe section">
             <div class="subscribe__bg">
                 <div class="subscribe__container container">
-                    <h1 class ="reserva_header" align="center">A sua reserva</h1>
+                    <h1 class ="reserva_header" align="center">Indique quem irá viajar</h1>
                     
                     <div class="rectangle">
-                        <h1 class = "voo_header">Voo X-Y-X</h1>
-                        <div class="thin_rectangle1">
-                            <div class="word-spacing">
-                                <span class="word1">Data</span>
-                                <span class="word2">Aeroporto</span>
-                                <span class="word3">Companhia aérea</span>
-                                <span class="word4">Nº de voo</span>
-                                
+                        <h1 class = "voo_header"><u>Adulto 1</u>
+                            <div class = "checkbox-wrapper1">
+                                <input type="checkbox" id="myCheckbox">
+                                <label for="myCheckbox">Responsável da reserva</label>
                             </div>
-                            
-                        </div>
+                        </h1>
 
+                        
+                        
+                        
                         <div class="thin_rectangle2">
-                            <p class="sub_description">Viagem de X para Y - sexta-feira 19 de Maio - Duração 02:30:00</p>
-                        </div>
-                        
-                        <h2 class="ida_header">Ida</h2>
-                        
-                        <div class="word-spacing2">
-                            <span class="word1">Partida <br>19:30<br>19/05/2023</span>
-                            <span class="word2">Aeroporto de X <br> &nbsp </span>
-                            <span class="word3">TAP <br> &nbsp</span>
-                            <span class="word4">LX1007 <br> &nbsp </span>
-                            
-                        </div>
-
-                        <div class="word-spacing3">
-                            <span class="word1">Chegada <br>22:00<br>19/05/2023</span>
-                            <span class="word2">Aeroporto de Y <br> &nbsp </span>
-                            <span class="word3">TAP <br> &nbsp</span>
-                            <span class="word4">LX1008 <br> &nbsp </span>
-                            
-                        </div>
-                        
-                        <div class="thin_rectangle3">
-                            <p class="sub_description">Viagem de Y para X - quarta-feira 31 de Maio - Duração 02:30:00</p>
-                        </div>
-
-                        <h2 class="volta_header">Volta</h2>
-
-                        <div class="word-spacing4">
-                            <span class="word1">Partida <br>19:30<br>31/05/2023</span>
-                            <span class="word2">Aeroporto de Y <br> &nbsp </span>
-                            <span class="word3">TAP <br> &nbsp</span>
-                            <span class="word4">LX1009 <br> &nbsp </span>
-                        </div>
-
-                        <div class="word-spacing5">
-                            <span class="word1">Chegada <br>22:00<br>31/05/2023</span>
-                            <span class="word2">Aeroporto de X <br> &nbsp </span>
-                            <span class="word3">TAP <br> &nbsp</span>
-                            <span class="word4">LX1010 <br> &nbsp </span>
-                        </div>
-
-                        
-                        <hr class="separation_bar">
-                        <h1 class = "voo_header">Hotel reservado - *Inserir nome do hotel aqui*</h1>
-
-                        <div class="thin_rectangle4">
-                            <div class="word-spacing6">
-                                <span class="word1">Preço</span>
-                                <span class="word2">Nº de pessoas</span>
-                                <span class="word3">Nº de quartos</span>
-                                <span class="word4">Nº de noites</span>
+                            <div class="form-container1">
+                                <div class="form-group">
+                                    <form>
+                                        <label for="name" style="color:#fff">Primeiro nome:</label>
+                                        <input type="text" id="name" name="name">
+                                        
+                                    </form>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <form>
+                                      <label for="email" style="color:#fff">Apelido:</label>
+                                      <input type="text" id="lastname" name="lastname">
+                                      
+                                    </form>
+                                </div>
+                
                             </div>
-                        </div>
 
-                        <div class="word-spacing7">
-                            <span class="word1">2400€</span>
-                            <span class="word2">4 pessoas</span>
-                            <span class="word3">2 quartos</span>
-                            <span class="word4">12 noites</span>
+                            <div class="form-container2">
+                                <div class="form-group">
+                                    <form>
+                                        <label for="name" style="color:#fff">Telefone:</label>
+                                        <input type="number" id="telephone" name="telephone">
+                                        
+                                    </form>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <form>
+                                      <label for="email" style="color:#fff">&nbsp&nbsp&nbsp&nbspIdade:</label>
+                                      <input type="number" id="age" name="age">
+                                      
+                                    </form>
+                                </div>
+                
+                            </div>
+
+                            <div class = "checkbox-wrapper2">
+                                <input type="checkbox" id="myCheckbox">
+                                <label for="myCheckbox" style="color:#fff"><strong>Dados de identificação (opcional)</strong></label>
+                            </div>
+                            
+                            <div class = "checkbox-wrapper3">
+                                <input type="checkbox" id="myCheckbox">
+                                <label for="myCheckbox" style="color:#fff"><strong>Passageiro frequente (opcional)</strong></label>
+                            </div>
+                        
+
                         </div>
 
 
@@ -165,24 +143,7 @@
             </div>
         </section>
 
-        <!--==================== CAR ====================-->
-         <section class="car-section">
-            <div class="subscribe__bg">
-                <div class="subscribe__container container">
-                    <h2 class="section__title subscribe__title">Código para automóvel<br> (opcional)</h2>
-                    <p class="subscribe__description"> Introduza aqui o código obtido através da <a class="guerin-link" href="https://www.guerin.pt/pt/" target="_blank" rel="noopener noreferrer" style="color:aqua">Guerin™</a>, para validar o processo de aluguer do automóvel.
-                    </p>
-
-                    <form action="" class="subscribe__form">
-                        <input type="text" placeholder="Introduza o código" class="subscribe__input">
-
-                        <button class="button">
-                            Validar
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
+        
         
         <!--==================== SPONSORS ====================-->
         <section class="sponsor section">
@@ -346,7 +307,7 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== Reserva JS ===============-->
-    <script src="assets/js/reserva.js"></script>
+    <script src="assets/js/dados.js"></script>
 </body>
 
 
