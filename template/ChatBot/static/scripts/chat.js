@@ -35,16 +35,9 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "Olá! Eu sou o ChatBot da TriPlaner! Podes perguntar o que quiseres."
-    let firstMessage1 = "Perguntas frequentes: "
-    let firstMessage2 = "Quais são os destinos mais populares neste momento?"
-    let firstMessage3 = "Quais são as opções de voos para \"X\" destino?"
-    let firstMessage4 = "Qual é o melhor período do ano para visitar \"X\" destino?"
-    let firstMessage5 = "Quais são as opções de hospedagem disponíveis para \"X\" destino?"
-    let firstMessage6 = "Que tipo de atividades posso fazer num \"X\" destino?"
-    let firstMessage7 = "Posso reservar um carro para alugar num \"X\" destino?"
-    let firstMessage8 = "Qual é o melhor meio de transporte para me deslocar num \"X\" destino?"
-    document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>' + '<p class="botText"><span>' + firstMessage1 + '</span></p>' + '<p class="botText"><span>' + firstMessage2 + '</span></p>' + '<p class="botText"><span>' + firstMessage3 + '</span></p>' + '<p class="botText"><span>' + firstMessage4 + '</span></p>' + '<p class="botText"><span>' + firstMessage5 + '</span></p>' + '<p class="botText"><span>' + firstMessage6 + '</span></p>' + '<p class="botText"><span>' + firstMessage7 + '</span></p>' + '<p class="botText"><span>' + firstMessage8 + '</span></p>';
+    let firstMessage = "Olá! Eu sou o ChatBot da TriPlaner! Podes perguntar o que quiseres, se não souberes o que perguntar podes pedir pelas perguntas frequentes!"
+
+    document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
 
@@ -84,7 +77,7 @@ function getResponse() {
 }
 
 // Handles sending text via button clicks
-function buttonSendText(sampleText) {
+function buttonSendText(sampleText) {   
     let userHtml = '<p class="userText"><span>' + sampleText + '</span></p>';
 
     $("#textInput").val("");
