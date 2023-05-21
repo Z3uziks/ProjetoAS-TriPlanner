@@ -1167,7 +1167,7 @@ input {
 
 .word-spacing2 .word2
 {
-  margin-right: 130px;
+  margin-right: 160px; /* 130px */
   display: inline-block;
 }
 
@@ -1200,7 +1200,7 @@ input {
 
 .word-spacing3 .word2
 {
-  margin-right: 130px;
+  margin-right: 104px;
   display: inline-block;
 }
 
@@ -1254,7 +1254,7 @@ input {
 
 .word-spacing4 .word2
 {
-  margin-right: 130px;
+  margin-right: 106px;
   display: inline-block;
 }
 
@@ -1287,7 +1287,7 @@ input {
 
 .word-spacing5 .word2
 {
-  margin-right: 130px;
+  margin-right: 163px;
   display: inline-block;
 }
 
