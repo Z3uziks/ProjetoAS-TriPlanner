@@ -2,6 +2,12 @@ function getBotResponse(input) {
     if (input.toLowerCase().includes("olá") || input.toLowerCase().includes("ola") || input.toLowerCase().includes("oi") || input.toLowerCase().includes("boa tarde") || input.toLowerCase().includes("boa noite") || input.toLowerCase().includes("bom dia") || input.toLowerCase().includes("boas")) {
         return "Olá! Como posso ajudar?";
 
+    } else if (input.toLowerCase().includes("museus") || input.toLowerCase().includes("museu") || input.toLowerCase().includes("idoso")|| input.toLowerCase().includes("idoso")) {
+        return "Lisboa tem muitos museus interessantes, excelentes opções de hospedagem e atrações para todas as idades, incluindo o Museu Nacional de Arte Antiga, o Museu Nacional do Azulejo, o Museu Calouste Gulbenkian e o Oceanário de Lisboa. Há muitas opções de hotéis e apartamentos dentro do seu orçamento, como o Hotel Portugal, o Hotel Mundial e o Lisbon Arsenal Suites. A cidade fala português e inglês, então a comunicação não deve ser um problema. Aproveite sua viagem a Lisboa!";
+
+    } else if (input.toLowerCase().includes("subidas")||input.toLowerCase().includes("ideia")||input.toLowerCase().includes("subidas")||input.toLowerCase().includes("má")||input.toLowerCase().includes("ma")||input.toLowerCase().includes("colinas")) {
+        return "Lisboa apresenta muitas colinas íngremes que podem ser um desafio para pessoas com deficiência motora. No entanto, muitos hotéis, museus e atrações na cidade são acessíveis para cadeiras de rodas e outros equipamentos de mobilidade. Além disso, há serviços de transporte público acessíveis e táxis adaptados disponíveis. Com planeamento adequado, é possível fazer uma viagem confortável e acessível em Lisboa.";
+    
     } else if (input.toLowerCase().includes("tripplaner") || input.toLowerCase().includes("triplaner") || input.toLowerCase().includes("triplanner")) {
         return "A TriPlaner é uma plataforma que permite aos utilizadores planear as suas viagens de forma simples e intuitiva. <br><br>Podes pesquisar por destinos, ver as opções de voos, hospedagem e de alguer de carros, e reservar tudo no mesmo lugar! <br><br>Para além disso, tens acesso aos locais mais populares assim como sugestões personalizadas!<br><br>E claro a um chatbot que te pode ajudar a qualquer momento :) !";
 
@@ -28,14 +34,9 @@ function getBotResponse(input) {
 
     } else if ((input.toLowerCase().includes("melhor") && input.toLowerCase().includes("transporte") && input.toLowerCase().includes("lisboa"))) {
         return "Em Lisboa, podes utilizar o eficiente sistema de transporte público, que inclui autocarros, metros e elétricos. Além disso, os táxis são amplamente disponíveis e há serviços de partilha de bicicletas para explorar a cidade de forma mais sustentável.";
-   
-    } else if (input.toLowerCase().includes("museus")) {
-        return "Lisboa tem muitos museus interessantes, excelentes opções de hospedagem e atrações para todas as idades, incluindo o Museu Nacional de Arte Antiga, o Museu Nacional do Azulejo, o Museu Calouste Gulbenkian e o Oceanário de Lisboa. Há muitas opções de hotéis e apartamentos dentro do seu orçamento, como o Hotel Portugal, o Hotel Mundial e o Lisbon Arsenal Suites. A cidade fala português e inglês, então a comunicação não deve ser um problema. Aproveite sua viagem a Lisboa!";
 
-    } else if (input.toLowerCase().includes("lisboa")) {
-        return "Lisboa apresenta muitas colinas íngremes que podem ser um desafio para pessoas com deficiência motora. No entanto, muitos hotéis, museus e atrações na cidade são acessíveis para cadeiras de rodas e outros equipamentos de mobilidade. Além disso, há serviços de transporte público acessíveis e táxis adaptados disponíveis. Com planeamento adequado, é possível fazer uma viagem confortável e acessível em Lisboa.";
 
-    }else if (input.toLowerCase().includes("obrigado")) {
+    } else if (input.toLowerCase().includes("obrigado")) {
         return "De nada! Foi um prazer ajudar! Se precisares de mais alguma coisa, não hesites em perguntar!";
 
     }
@@ -44,3 +45,9 @@ function getBotResponse(input) {
         return "Desculpa, não comprendi. Consegues reformular a pergunta? Obrigado!";
     }
 }
+
+
+
+
+
+
