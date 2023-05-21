@@ -277,14 +277,15 @@ input[type="submit"] {
 select {
   width: 300px;
   padding: 5px;
-  margin-bottom: 10px;
-  background-color: #ffffffb2;
+  margin-left: 260px;
+  background-color: var(--body-color);
+  color: var(--title-color);
   border: none;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border: solid;
   border-radius: 4px;
-  border-color: rgba(3, 132, 134, 0.726);
+  border-color: #8ccbe6;
 }
 
 
@@ -294,8 +295,8 @@ select:focus {
 }
 
 select option {
-  background-color: #fff;
-  color: #333;
+  background-color: var(--body-color);
+  color: var(--title-color);
 }
 
 .dropdown {
