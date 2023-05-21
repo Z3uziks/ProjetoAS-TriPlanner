@@ -35,7 +35,7 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "Olá! Eu sou o ChatBot da TriPlaner! Podes perguntar o que quiseres, se não souberes o que perguntar podes pedir pelas perguntas frequentes!"
+    let firstMessage = "Olá! Eu sou o ChatBot da TriPlanner! Podes perguntar o que quiseres, se não souberes o que perguntar podes pedir pelas perguntas frequentes!"
 
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
