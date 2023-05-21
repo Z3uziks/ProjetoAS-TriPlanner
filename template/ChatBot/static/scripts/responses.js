@@ -2,16 +2,16 @@ function getBotResponse(input) {
     if (input.toLowerCase().includes("olá") || input.toLowerCase().includes("ola") || input.toLowerCase().includes("oi") || input.toLowerCase().includes("boa tarde") || input.toLowerCase().includes("boa noite") || input.toLowerCase().includes("bom dia") || input.toLowerCase().includes("boas")) {
         return "Olá! Como posso ajudar?";
 
-    } else if ((input.toLowerCase().includes("tripplaner") || input.toLowerCase().includes("triplaner")) || input.toLowerCase().includes("triplanner")) {
+    } else if (input.toLowerCase().includes("tripplaner") || input.toLowerCase().includes("triplaner") || input.toLowerCase().includes("triplanner")) {
         return "A TriPlaner é uma plataforma que permite aos utilizadores planear as suas viagens de forma simples e intuitiva. <br><br>Podes pesquisar por destinos, ver as opções de voos, hospedagem e de alguer de carros, e reservar tudo no mesmo lugar! <br><br>Para além disso, tens acesso aos locais mais populares assim como sugestões personalizadas!<br><br>E claro a um chatbot que te pode ajudar a qualquer momento :) !";
 
     } else if ((input.toLowerCase().includes("perguntas") || input.toLowerCase().includes("pergunta")) || input.toLowerCase().includes("ajuda")) {
-        return "Aqui estão as perguntas mais frequentes:<br><br>-Quais são os destinos mais populares neste momento?<br>-Quais são as opções de voos para \"X destino\"?<br>-Qual é o melhor período do ano para visitar \"X destino\"?<br>-Quais são as opções de hospedagem disponíveis para \"X destino\"?<br>-Que tipo de atividades posso fazer em \"X destino\"?<br>-Posso reservar um carro para alugar em \"X destino\"?<br>-Qual é o melhor meio de transporte para me deslocar em \"X destino\"?";
+        return "Aqui estão as perguntas mais frequentes:<br><br>-Quais são os destinos mais populares neste momento?<br>-Quais são as opções de voos para viajar de \"Y destino\" para \"X destino\"?<br>-Qual é o melhor período do ano para visitar \"X destino\"?<br>-Quais são as opções de hospedagem disponíveis em \"X destino\"?<br>-Que tipo de atividades posso fazer em \"X destino\"?<br>-Posso reservar um carro para alugar em \"X destino\"?<br>-Qual é o melhor meio de transporte para me deslocar em \"X destino\"?";
 
     } else if (input.toLowerCase().includes("populares")) {
         return "Os destinos mais populares no momento são Bali, Bora Bora, Hawaii, Whitehaven, Hvar.";
 
-    } else if (((input.toLowerCase().includes("opções")) || (input.toLowerCase().includes("opçoes")) && input.toLowerCase().includes("voos")) && input.toLowerCase().includes("porto") && input.toLowerCase().includes("lisboa")) {
+    } else if ((input.toLowerCase().includes("opções") || (input.toLowerCase().includes("opçoes")) && input.toLowerCase().includes("voos")) && input.toLowerCase().includes("porto") && input.toLowerCase().includes("lisboa")) {
         return "Existem várias companhias aéreas que oferecem voos para Lisboa a partir do Porto. Algumas opções incluem TAP Air Portugal, Ryanair e easyJet.";
 
     } else if ((input.toLowerCase().includes("melhor") && (input.toLowerCase().includes("período") || input.toLowerCase().includes("periodo") || input.toLowerCase().includes("epoca") || input.toLowerCase().includes("época")) && input.toLowerCase().includes("lisboa"))) {
@@ -23,8 +23,8 @@ function getBotResponse(input) {
     } else if ((input.toLowerCase().includes("atividades") && input.toLowerCase().includes("lisboa"))) {
         return "Em Lisboa, podes desfrutar de passeios pelos bairros históricos, como Alfama e Bairro Alto, visitar museus fascinantes, como o Museu Nacional do Azulejo e o Museu de Arte Antiga, provar a deliciosa culinária local e fazer passeios de barco pelo Rio Tejo.";
 
-    } else if (((input.toLowerCase().includes("alugar") || input.toLowerCase().includes("reservar")) && input.toLowerCase().includes("carro") && input.toLowerCase().includes("lisboa"))) {
-        return "Sim, oferecemos serviços de aluguer de carros em muitos destinos, incluindo Lisboa, devido à nossa colaboração com a Guerin.";
+    } else if ((input.toLowerCase().includes("alugar") || input.toLowerCase().includes("reservar") || input.toLowerCase().includes("carro") && input.toLowerCase().includes("lisboa"))) {
+        return "Sim, oferecemos serviços de aluguer de carros em muitas cidades devido à nossa colaboração com a Guerin, incluindo Lisboa.";
 
     } else if ((input.toLowerCase().includes("melhor") && input.toLowerCase().includes("transporte") && input.toLowerCase().includes("lisboa"))) {
         return "Em Lisboa, podes utilizar o eficiente sistema de transporte público, que inclui autocarros, metros e elétricos. Além disso, os táxis são amplamente disponíveis e há serviços de partilha de bicicletas para explorar a cidade de forma mais sustentável.";
