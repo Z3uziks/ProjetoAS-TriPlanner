@@ -44,4 +44,4 @@
     * -confirmation.html<p>
     * -confirmation.css<p>
 ----------------------------  
-(alguns membros fizeram alterações do codigo dos outros conforme surgiram duvidas)
+(alguns membros fizeram alterações do codigo dos outros conforme foi preciso (devido a dúvidas / pequenas correções)
