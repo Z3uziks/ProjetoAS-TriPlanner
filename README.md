@@ -20,7 +20,6 @@
     * -dados.css<p>
     * -dados.js<p>
 ----------------------------
-   
 * Patrícia Cardoso (103243)<p>
   * Login/SignUp:<p>
     * -login.html<p>
@@ -29,11 +28,13 @@
     * -voo.html<p>
     * -voo.css<p>
 ----------------------------   
-* Henrique Coelho (108342)
-  * Hotel:
-    * -hotel.html
-    * -hotel.css
-    * -hotel.js
+* Henrique Coelho (108342)<p>
+  * Hotel:<p>
+    * -hotel.html<p>
+    * -hotel.css<p>
+    * -hotel.js<p>
+    * -rangeslider.js<p>
+    * -rangeslider.css<p>
 ---------------------------- 
 * Gonçalo Oliveira (108405)<p>
   * Perfil:<p>
