@@ -141,6 +141,19 @@
     animation: floatup .5s forwards
 }
 
+.bot-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.bot-link:hover {
+    background-color: #286090;
+}
+
 @keyframes floatup {
     from {
         transform: translateY(14px);
