@@ -34,17 +34,35 @@ function getBotResponse(input) {
     } else if (input.toLowerCase().includes("subidas") || input.toLowerCase().includes("ideia") || input.toLowerCase().includes("subidas") || input.toLowerCase().includes("má") || input.toLowerCase().includes("ma") || input.toLowerCase().includes("colinas")) {
         return "Lisboa apresenta muitas colinas íngremes que podem ser um desafio para pessoas com deficiência motora. No entanto, muitos hotéis, museus e atrações na cidade são acessíveis para cadeiras de rodas e outros equipamentos de mobilidade. Além disso, há serviços de transporte público acessíveis e táxis adaptados disponíveis. Com planeamento adequado, é possível fazer uma viagem confortável e acessível em Lisboa.";
 
-    } else if (input.toLowerCase().includes("link") ||  input.toLowerCase().includes("pacotes") || input.toLowerCase().includes("pacote")) {
-
-        var response = "Aqui está o link para os pacotes disponíveis: ";
+    } else if ((input.toLowerCase().includes("link") || input.toLowerCase().includes("pacotes") || input.toLowerCase().includes("pacote")) && input.toLowerCase().includes("lisboa")) {
         var link = document.createElement("a");
         link.href = "voo.html";
-        link.innerHTML = "A nossa sugestão";
+        link.innerHTML = "Sugestão para uma viajem a lisboa";
         link.target = "_blank"; // Abre o link em uma nova aba (opcional)
         link.classList.add("bot-link");
-        document.getElementById("chatbox").appendChild(link);
 
-        return response;
+        var botResponse = document.createElement("p");
+        botResponse.classList.add("botText", "text-left"); // Adiciona a classe "text-left" para alinhar à esquerda
+        botResponse.appendChild(link);
+
+        document.getElementById("chatbox").appendChild(botResponse);
+
+        return "Ao clicares no link, serás reencaminhado para a página de escolha de voos e posterirmente de escolha de hotel!";
+
+    } else if ((input.toLowerCase().includes("link") || input.toLowerCase().includes("pacotes") || input.toLowerCase().includes("pacote")) && input.toLowerCase().includes("hawaii")) {
+        var link = document.createElement("a");
+        link.href = "voo2.html";
+        link.innerHTML = "A nossa sugestão para uma viajem ao hawaii";
+        link.target = "_blank"; // Abre o link em uma nova aba (opcional)
+        link.classList.add("bot-link");
+
+        var botResponse = document.createElement("p");
+        botResponse.classList.add("botText", "text-left"); // Adiciona a classe "text-left" para alinhar à esquerda
+        botResponse.appendChild(link);
+
+        document.getElementById("chatbox").appendChild(botResponse);
+
+        return "Ao clicares no link, serás reencaminhado para a página de escolha de voos e posterirmente de escolha de hotel!";
 
     } else if (input.toLowerCase().includes("obrigado")) {
         return "De nada! Foi um prazer ajudar! Se precisares de mais alguma coisa, não hesites em perguntar!";

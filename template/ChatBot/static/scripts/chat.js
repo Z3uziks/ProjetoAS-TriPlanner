@@ -56,6 +56,11 @@ function getHardResponse(userText) {
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
 
+function showBotResponse(response) {
+    let botHtml = '<div class="bot-response"><p>' + response + '</p></div>';
+    $("#chatbox").append(botHtml);
+    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+}
 //Gets the text text from the input box and processes it
 function getResponse() {
     let userText = $("#textInput").val();
@@ -71,6 +76,7 @@ function getResponse() {
     }, 1000)
 
 }
+
 
 // Handles sending text via button clicks
 function buttonSendText(sampleText) {   
