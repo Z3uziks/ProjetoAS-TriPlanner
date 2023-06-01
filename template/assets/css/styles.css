@@ -1227,7 +1227,10 @@ input {
 h2 {
   color: #333;
 }
-
+form-group{
+  border: solid;
+  border-color: rgb(9, 197, 56);
+}
 form {
   margin-bottom: 20px;
   display: flex;
@@ -1247,7 +1250,8 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
   display: flex;
-
+  position: relative;
+  left: 90px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -1313,6 +1317,17 @@ select option {
   position: relative;
   display: inline-block;
 }
+.dropdown input {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #ffffffb2;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: solid;
+  border-radius: 4px;
+  border-color: rgba(3, 132, 134, 0.726);}
 
 .dropdown input {
   padding: 10px;
