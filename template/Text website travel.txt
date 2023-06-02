@@ -69,7 +69,7 @@ https://www.youtube.com/
 
 
 footer__copy
-&#169; 2021 Bedimcode. All rigths reserved.
+&#169;   All rigths reserved.
 
 footer__terms-link
 Terms & Agreements
