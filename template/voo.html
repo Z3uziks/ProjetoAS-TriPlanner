@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Exemplos de Voos</title>
-    <link rel="stylesheet" href="assets/css/voo.css"></head>
-     <!--=============== ChatBot ===============-->
-     <link rel="stylesheet" href="ChatBot/static/css/chat.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/voo.css">
 </head>
-<body style="background-image: url(assets/img/voo.jpg);">
+<!--=============== ChatBot ===============-->
+<link rel="stylesheet" href="ChatBot/static/css/chat.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        background-image: url(assets/img/voo.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 110%;
+    }
+</style>
+</head>
+
+<body>
 
     <div class="navbar">
         <ul>
@@ -18,7 +28,7 @@
             <a href="login.html">Log out</a>
         </div>
     </div>
-    
+
     <h3>Com base nos seus critérios temos disponíveis os seguintes voos:</h3>
     <div class="container">
         <div class="flight">
@@ -51,7 +61,7 @@
             </div>
             <button onclick="location.href='hotel.html'" class="reserve-button">Reservar</button>
         </div>
-        
+
         <div class="flight">
             <div class="title">Voo 2</div>
             <div class="details">
@@ -158,7 +168,8 @@
         </div>
     </div>
 </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="ChatBot/static/scripts/responses.js"></script>
-    <script src="ChatBot/static/scripts/chat.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="ChatBot/static/scripts/responses.js"></script>
+<script src="ChatBot/static/scripts/chat.js"></script>
+
 </html>
